@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f4">
+  <title>morrow — a little structure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="status-bar"><span>9:41</span><span aria-hidden="true">▮ ◉ ▰</span></div>
+    <div id="screen" class="screen"></div>
+    <nav id="navigation" class="navigation" aria-label="Main navigation">
+      <button data-tab="today" class="nav-item active"><span aria-hidden="true">⌂</span>Today</button>
+      <button data-tab="plan" class="nav-item"><span aria-hidden="true">▦</span>Plan</button>
+      <button data-tab="progress" class="nav-item"><span aria-hidden="true">▥</span>Progress</button>
+      <button data-tab="account" class="nav-item"><span aria-hidden="true">♙</span>Account</button>
+    </nav>
+    <div class="home-indicator"><span></span></div>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
